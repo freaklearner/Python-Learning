@@ -19,11 +19,10 @@ url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
 cols = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class'];
 dataset = pandas.read_csv(url, names=cols);
 
-if not os.path.isfile('files/repoData.txt'):
-    f1 = open(r'files/repoData.txt','w+')
-    for roc in dataset.to_records():
-        st = str(roc[1])+","+str(roc[2])+","+str(roc[3])+","+str(roc[4])+","+str(roc[5])+"\n"
-        f1.write(st)
-    f1.close()
+r = csv.reader(dataset)
+for row in r:
+    print(row)
+
+
 
 
