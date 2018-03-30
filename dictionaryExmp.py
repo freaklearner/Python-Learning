@@ -36,3 +36,12 @@ print(sorted(fruit_color))
 
 del fruit_color["Mango"]
 print(sorted(fruit_color))
+
+#2D
+
+tables = {}
+tables["two"]=[]
+for x in range(2,21,2):
+    tables["two"].append(x)
+
+print(tables)
