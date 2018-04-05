@@ -10,5 +10,11 @@ for w in f1.readlines():
 f1.close()
     
 data = r.reducer(content)
+fl = open(r'keyValueFile.csv','w')
 for k,v in data.items():
     print("%s : %d" % (k,v))
+    data = str(k)+":"+str(v)+"\n"
+    fl.write(data)
+fl.close()
+
+    
