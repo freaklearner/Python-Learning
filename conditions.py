@@ -30,4 +30,25 @@ y = [1,2,3]
 print(x==y)
 
 print(x is y)
-        
+
+# 'is' is similar to ==
+import random
+
+num = random.randrange(1,10)
+if num is 7:
+	print("You are lucky")
+elif num is 8:
+	print("You are very lucky")
+elif num is not 9 or num is not 10:
+	print("better luck next time")
+else:
+	print("try again")
+
+
+# empty string, empty object, 0, None are treated as false value
+print("Enter your faveriout color:")
+color = input()
+if color:
+	print("Excelent choice")
+else:
+	print("you didn't answered")
