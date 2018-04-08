@@ -107,3 +107,23 @@ print(number)
 
 a_string = ', '.join(name)
 print(a_string)
+
+# slice
+print(name[2:])
+
+# negative number at the end tells how many numbers to be exclude from the end
+print(name[:-1])
+
+print(name[2:-4])
+
+print(name[::-1])
+
+print(name[2][::-1])
+
+print('shub'[::-1])
+
+
+# swaping between list elements
+names = ['ani','honey']
+names[0],names[1] = names[1],names[0]
+print(names)
