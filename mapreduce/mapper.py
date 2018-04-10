@@ -1,6 +1,7 @@
+import re
 def mapper(line,sep):
     if sep == ' ':
-        words = line.split()    
+        words = re.split('["().\s]|, |“|”|--',line)
     else:
-        words = line.split(sep)    
+        words = line.split(sep)
     return words
